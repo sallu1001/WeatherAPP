@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/mType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/img"
+            android:text="Sunny"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/subLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mType"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/img" >
+
+            <TextView
+                android:id="@+id/minC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Min " />
+
+            <TextView
+                android:id="@+id/maxC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/minC"
+                android:text="Max " />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subLayout"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/img"
+            android:layout_marginLeft="5dp"
+            android:text="Date - " />
+    </RelativeLayout>
+
+</RelativeLayout>
